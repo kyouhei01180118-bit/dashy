@@ -1,58 +1,31 @@
----
-# Page meta info, like heading, footer text and nav links
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
+  title: S戦略部 分析ポータル
+  description: 宮崎市エリア分析および競合調査リンク集
   navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
-
-# Optional app settings and configuration
+    - title: GitHub
+      path: https://github.com/
 appConfig:
-  theme: colorful
-
-# Main content - An array of sections, each containing an array of items
+  theme: default
+  layout: auto
+  iconSize: medium
+  language: jp
+  auth:
+    users:
+      - user: admin
+        hash: 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+        type: admin
 sections:
-  - name: Getting Started
-    icon: fas fa-rocket
+  - name: エリア分析システム
+    icon: fas fa-chart-line
     items:
-      - title: GitHub
-        description: Source Code, Issues and Pull Requests
-        url: https://github.com/lissy93/dashy
-        icon: si-github
-      - title: Docs
-        description: Configuring & Usage Documentation
-        provider: Dashy.to
-        icon: far fa-book
-        url: https://dashy.to/docs
-
-  - name: Support Dashy
-    icon: fas fa-heart
-    displayData:
-      itemSize: large
-    widgets:
-      - type: image
-        label: Dashy is made possible thanks to our awesome sponsors
-        options:
-          imagePath: https://readme-contribs.as93.net/sponsors/lissy93?perRow=5&shape=squircle
+      - title: 宮崎市商圏ダッシュボード (Streamlit)
+        description: 人口動態および競合稼働データの可視化
+        icon: fas fa-map-marked-alt
+        url: https://streamlit.io/
+  - name: データ収集ツール
+    icon: fas fa-database
     items:
-      - title: Sponsor
-        url: https://github.com/sponsors/lissy93
-        description: Sponsor @Lissy93 on GitHub to support with ongoing development of Dashy
-        icon: 🩷
-        color: '#ff78d1'
-        backgroundColor: '#c30c844a'
-
-  - name: Latest Updates
-    icon: fas fa-code-branch
-    displayData:
-      cols: 1
-      rows: 3
-      cutToHeight: true
-    widgets:
-      - type: rss-feed
-        options:
-          rssUrl: https://github.com/lissy93/dashy/releases.atom
-          limit: 5
+      - title: 競合サイトスクレイピング
+        description: 定期巡回によるイベント情報取得
+        icon: fas fa-robot
+        url: https://github.com/
