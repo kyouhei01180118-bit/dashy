@@ -1,6 +1,6 @@
 pageInfo:
-  title: S戦略部 分析ポータル
-  description: 宮崎市エリア分析および競合調査リンク集
+  title: My Workspace
+  description: Personal Dashboard
   navLinks:
     - title: GitHub
       path: https://github.com/
@@ -15,17 +15,17 @@ appConfig:
         hash: 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
         type: admin
 sections:
-  - name: エリア分析システム
-    icon: fas fa-chart-line
+  - name: Tools
+    icon: fas fa-tools
     items:
-      - title: 宮崎市商圏ダッシュボード (Streamlit)
-        description: 人口動態および競合稼働データの可視化
-        icon: fas fa-map-marked-alt
-        url: https://streamlit.io/
-  - name: データ収集ツール
-    icon: fas fa-database
+      - title: Analysis App 1
+        description: System A
+        icon: fas fa-chart-bar
+        url: https://example.com/
+  - name: Resources
+    icon: fas fa-folder-open
     items:
-      - title: 競合サイトスクレイピング
-        description: 定期巡回によるイベント情報取得
-        icon: fas fa-robot
-        url: https://github.com/
+      - title: Data Source
+        description: Reference
+        icon: fas fa-link
+        url: https://example.com/
