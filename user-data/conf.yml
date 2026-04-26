@@ -8,7 +8,7 @@ appConfig:
   theme: default
   layout: auto
   iconSize: medium
-  language: jp
+  language: ja
   auth:
     users:
       - user: admin
